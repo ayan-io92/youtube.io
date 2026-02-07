@@ -19,13 +19,30 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
+    position: fixed;
+    width: 100%;
   }
 
   .nav i {
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
     background-color: #000000;
     cursor: pointer;
+  }
+
+  .menu i {
+    background-color: #000000;
+    color: #fff;
+    font-size: 15px;
+    padding: 4px 0 5px 0;
+    height: 26px;
+    width: 26px;
+  }
+
+  .menu i:hover {
+    background-color: #303030;
+    color: #fff;
+    border-radius: 50%;
   }
 
   .left {
@@ -44,6 +61,8 @@
   }
 
   .middle input {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     width: 400px;
     height: 30px;
     background-color: #121212;
@@ -51,6 +70,10 @@
     color: white;
     padding: 0 12px;
     border-radius: 20px 0 0 20px;
+  }
+
+  .middle i {
+    background-color: #222222;
   }
 
   .search {
@@ -77,6 +100,20 @@
     cursor: pointer;
   }
 
+  .mic i {
+    background-color: #181818;
+  }
+
+  .mic i:hover {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #303030;
+  }
+
   .right {
     display: flex;
     align-items: center;
@@ -98,21 +135,40 @@
     justify-content: center;
   }
 
-  .videos {
+  .container{
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+  }  
+
+  .sidebar {
+    width: 100%;
+    padding: 12px;
+    background: #000000;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .lef {
     display: flex;
-    padding: 20px;
-  }
-
-  .videos .left {
-    width: 10%;
+    align-items: center;
+    height: 100vh;
+    margin-top: 100vh;
+    gap: 14px;
+    padding: 10px 14px;
+    margin-bottom: 6px;
     background-color: #000000;
-    border-right: 1px solid #fff;
-    color: #fff;
-    padding: 10px;
+    color: #eaeaea;
+    padding: 60px 0 3px 0;
+    font-size: 10px;
+    font-weight: 100;
+    cursor: pointer;
   }
 
-  .videos .right {
-    width: 90%;
+  .icon i {
+    font-size: 18px;
+    width: 22px;
+    text-align: center;
     color: #fff;
-    padding: 10px;
   }
