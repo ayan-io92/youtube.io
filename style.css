@@ -127,22 +127,21 @@
   }
 
   .account i {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     font-size: 14px;
     height: 30px;
-    width: 100px;
+    width: 80px;
     background-color: #565656;
     border-radius: 20px;
     padding-top: 5px;
+    padding-left: 5px;
   }
 
   .account span {
     font-size: 14px;
     font-weight: 400;
-    height: 30px;
-    width: 100px;
-    background-color: #565656;
-    border-radius: 20px;
-    padding-top: 5.5px;
   }
 
   .bell i {
@@ -180,7 +179,7 @@
     height: 100vh;
     background: #0f0f0f;
     padding: 12px;
-    overflow-y: scroll;
+    overflow: auto;
   }
 
   .home {
@@ -232,9 +231,11 @@
     font-size: 15px;
   }
 
-  .subscribe i {
-    font-size: 18px;
+  .subscribe img {
+    height: 22px;
     width: 22px;
+    background-color: #ffffff;
+    color: #ffffff;
   }
 
   .subscribe:hover {
@@ -335,12 +336,6 @@
   .liked:hover {
     background: #272727;
   }
-
-
-
-
-
-
 
   .music {
     display: flex;
@@ -462,7 +457,7 @@
     background: #272727;
   }
 
- .report {
+  .report {
     display: flex;
     align-items: center;
     gap: 18px;
@@ -481,7 +476,7 @@
     background: #272727;
   }
 
- .help {
+  .help {
     display: flex;
     align-items: center;
     gap: 18px;
@@ -500,7 +495,7 @@
     background: #272727;
   }
 
-   .feedback {
+  .feedback {
     display: flex;
     align-items: center;
     gap: 18px;
