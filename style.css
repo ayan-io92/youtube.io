@@ -59,6 +59,7 @@
  .middle {
    display: flex;
    align-items: center;
+   background-color: transparent;
  }
 
  .middle input {
@@ -251,9 +252,12 @@
  }
 
  .content .Buttons {
+   height: 50px;
+   width: 100%;
    margin-bottom: 20px;
    position: fixed;
    background-color: transparent;
+   background-color: #0F0F0F;
  }
 
  .content .buttons-1 {
@@ -305,9 +309,9 @@
    object-fit: cover;
    flex-wrap: wrap;
    margin-top: 70px;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
    column-gap: 15px;
-   row-gap: 60px;
+   row-gap: 40px;
  }
 
  .card .thumb {
